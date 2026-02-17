@@ -1,0 +1,19 @@
+---
+description: 当用户说 "skill-publish" 或 "skill publish" 时，直接执行本地发布脚本
+alwaysApply: true
+---
+
+# skill-publish 指令
+
+当用户说 "skill-publish"、"skill publish"、"发布 skill" 时，直接执行以下操作，无需搜索或询问：
+
+1. 运行 `~/.agents/bin/skill-publish` 脚本（当前项目目录作为默认参数）
+2. 如果失败，根据错误信息修复（常见问题：SKILL.md 缺少 `version` 字段）
+3. 成功后显示发布结果
+
+## 脚本说明
+
+- 路径：`~/.agents/bin/skill-publish`
+- 功能：将当前项目 rsync 到 `~/.agents/skills/<skill-name>/`，并写入 `.publish-meta.json`
+- 要求：项目根目录必须有 `SKILL.md`，其 YAML front matter 需包含 `name` 和 `version`
+- 常用选项：`--dry-run`（预览）、`--list`（列出已发布 skill）
