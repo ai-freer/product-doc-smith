@@ -48,8 +48,8 @@
 | 业务流程图 | Mermaid | Mermaid | Mermaid |
 | 时序图 | Mermaid | Mermaid | Mermaid |
 | 数据流图 | Mermaid | Mermaid | Mermaid |
-| 系统架构图 | Mermaid | Mermaid | Coze 生图 + Mermaid |
-| 原型图 | Coze 生图 + Mermaid | Coze 生图 + Mermaid | Coze 生图 + Mermaid |
+| 系统架构图 | Mermaid | Mermaid | AI 生图 + Mermaid |
+| 原型图 | AI 生图 + Mermaid | AI 生图 + Mermaid | AI 生图 + Mermaid |
 
 ### 决策逻辑
 
@@ -64,8 +64,8 @@
 3. **选择实现方式**
    - 根据决策矩阵选择
    - 业务流程图、时序图、数据流图 → 始终 Mermaid
-   - 系统架构图 → 低/中复杂度 Mermaid，高复杂度 Coze 生图 + Mermaid
-   - 原型图 → 始终 Coze 生图 + Mermaid
+   - 系统架构图 → 低/中复杂度 Mermaid，高复杂度 AI 生图 + Mermaid
+   - 原型图 → 始终 AI 生图 + Mermaid
 
 ## 执行流程
 
@@ -74,18 +74,18 @@
 1. 根据图表类型生成 Mermaid 代码
 2. 嵌入到文档中
 
-### 场景B：Coze 生图 + Mermaid
+### 场景B：AI 生图 + Mermaid
 
 **注意事项**：
 - 对于系统架构图，特别是中高复杂度场景，必须使用信息保障约束
-- 详细的三原则和Prompt模板见：[diagram-prompt-guide.md#系统架构图coze生图信息保障约束](diagram-prompt-guide.md#系统架构图coze生图信息保障约束)
+- 详细的三原则和Prompt模板见：[diagram-prompt-guide.md#系统架构图ai生图信息保障约束](diagram-prompt-guide.md#系统架构图ai生图信息保障约束)
 
 **执行步骤**：
 1. 生成 Mermaid 代码（信息保障）
 2. 生成图像描述 prompt
 3. **应用信息保障约束**（见 diagram-prompt-guide.md）
-4. 调用 Coze 生图能力
-5. 获取图片链接
+4. 调用本机已配置的生图工具或服务
+5. 获取生成图片的路径或链接
 6. 将图片和 Mermaid 代码同时嵌入到文档中
 
 ## 复杂度评估示例
@@ -114,5 +114,5 @@
 元素：20+ 个服务、网关、数据库集群、缓存集群、消息队列、监控系统等
 关系：服务间调用、数据库分片、缓存策略、异步消息、监控告警
 层次：5+ 层（前端层、网关层、服务层、数据层、基础设施层）
-决策：Coze 生图 + Mermaid
+决策：AI 生图 + Mermaid
 ```

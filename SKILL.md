@@ -17,6 +17,7 @@ description: 基于产品方法论理解用户需求，匹配相应的文档结�
 ## 前置准备
 - 无需额外依赖包
 - 无需非标准文件/文件夹准备
+- 可选:AI 生图能力。本 Skill 不绑定生图软件或服务，由安装方自行配置；需要 AI 生图时使用当前环境已配置的生图工具或服务。未配置或不可用时只输出 Mermaid，并告知用户哪张图未生成
 
 ## 操作步骤
 
@@ -265,8 +266,8 @@ description: 基于产品方法论理解用户需求，匹配相应的文档结�
 | 业务流程图 | Mermaid | Mermaid | Mermaid |
 | 时序图 | Mermaid | Mermaid | Mermaid |
 | 数据流图 | Mermaid | Mermaid | Mermaid |
-| 系统架构图 | Mermaid | Mermaid | Coze 生图 + Mermaid |
-| 原型图 | Coze 生图 + Mermaid | Coze 生图 + Mermaid | Coze 生图 + Mermaid |
+| 系统架构图 | Mermaid | Mermaid | AI 生图 + Mermaid |
+| 原型图 | AI 生图 + Mermaid | AI 生图 + Mermaid | AI 生图 + Mermaid |
 
 > 详细生成方法见资源索引"图表生成相关"
 

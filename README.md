@@ -30,7 +30,9 @@
 此外支持：
 
 - E 持续修改与完善（用户提出修改意见时）
-- 可视化图表生成（Mermaid / Coze 生图 + Mermaid）
+- 可视化图表生成（Mermaid / AI 生图 + Mermaid）
+
+> AI 生图依赖安装方自己的生图软件和服务，本 Skill 不绑定具体供应商。未配置时只输出 Mermaid。
 
 ## 项目结构
 
